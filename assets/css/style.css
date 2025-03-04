@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #0396ff;
+    --color-2: #7367f0;
+    --color-3: #32ccbc;
+    --color-4: #f55555;
+    --color-5: #ffd503;
+    --color-6: #ff0396;
+    --color-7: #00000a;
+    --font-1: "Anton", sans-serif;
+    --font-2: "Orbitron", sans-serif;
+    --font-3: "Be Vietnam Pro", sans-serif;
+    --font-system: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-3);
+    line-height: 1.6;
+}
+
+.container {
+    padding-bottom: 20px;
+    max-width: 1200px;
+    padding-left: 20px;
+}
+.container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.container li {
+    font-size: 1.6rem;
+    font-family: var(--font-3);
+    line-height: 1.6;
+}
+.container h1 {
+    margin: 40px 0 20px;
+    display: block;
+    font-family: var(--font-1);
+    color: var(--color-1);
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+p {
+    margin: 10px 0;
+    font-family: var(--font-3);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2;
+    color: rgb(31, 41, 55);
+}
+.container h2 {
+    margin: 32px 0 16px;
+    display: block;
+    color: var(--color-6);
+    font-family: var(--font-1);
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.container h3 {
+    margin: 20px 0 10px;
+    font-family: var(--font-3);
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-1);
+}
+
+.container ul.hand {
+    position: relative;
+    list-style-type: none;
+    padding-left: 30px; /* Để icon có khoảng cách đẹp */
+}
+
+.container ul.hand li::before {
+    content: "\f30b"; /* Unicode của icon hand-point-right */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: #05ff48; /* Màu của icon */
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.example {
+    margin: 15px 0 15px 20px;
+}
+
+.example i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.example i.fa-fire {
+    color: red;
+}
+
+.example i.fa-square-check {
+    color: #00ff00;
+}
+
+.example i.fa-square-xmark {
+    color: red;
+}
+
+.example p {
+    font-size: 1.6rem;
+    font-family: var(--font-3);
+}
+
+.highlight {
+    font-weight: 600;
+    color: #000;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
